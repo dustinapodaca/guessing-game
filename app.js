@@ -8,7 +8,7 @@ if (user === null) {
     alert('You need to provide your name');
     user = prompt('No really, please let me know who you are?');
 } else {
-    alert('Why hello ' + user + '! It is a pleasure to meet you.');
+    alert('Why hello ' + user + '! It is a pleasure to meet you. Welcome to my site!');
 }
 
 let travel = prompt('I have a few questions for you. Feel free to answer \'Yes\' or \'No\'- but for starters, do I enjoy traveling and being outdoors?');
@@ -57,14 +57,14 @@ if (typeof (code) === 'string') {
 }
 
 switch (code) {
-    case 'yes':
-        alert('Correct again, I am currently in Code 201 and am learning software development.');
-        //  console.log('Correct!');
-        break;
-    case 'no':
-        alert('That is actually incorrect, I am currently enrolled as a student and am loving it so far!');
-        //  console.log('incorrect!');
-        break;
+case 'yes':
+    alert('Correct again, I am currently in Code 201 and am learning software development.');
+//  console.log('Correct!');
+    break;
+case 'no':
+    alert('That is actually incorrect, I am currently enrolled as a student and am loving it so far!');
+//  console.log('incorrect!');
+    break;
 }
 
 let security = prompt('Was I in the security field before starting CodeFellows?');
@@ -74,10 +74,12 @@ if (typeof (security) === 'string') {
 
 if (security === 'yes') {
     alert('Lastly, correct again. I was and still am in the private security industry.');
-    //  console.log('Correct!');
+//  console.log('Correct!');
 } else if (security === 'no') {
-    //  alert('That is incorrect');
+//  alert('That is incorrect');
 } 
+
+alert('Thank you for answering those questions ' + user + ', you did great! Welcome to my site!')
 
 /*
 // creates a variables and asks the user to give it a value.
