@@ -1,6 +1,6 @@
 'use strict'; // strict syntax
 
-let userPoints = 0;
+let correctAnswer = 0;
 
 console.log('app is running');
 
@@ -22,6 +22,7 @@ if (typeof (travel) === 'string') {
 
 if (travel === 'yes') {
   alert('You are correct! I love to travel and explore other parts of the world.');
+  correctAnswer++;
 //  console.log('Correct!');
 } else if (travel === 'no') {
 //  alert('That is incorrect');
@@ -35,6 +36,7 @@ if (typeof (gym) === 'string') {
 
 if (gym === 'yes') {
   alert('You are spot on! The gym is usually always my \'me time\' where I can get away.');
+  correctAnswer++;
 //  console.log('Correct!');
 } else if (gym === 'no') {
 //  alert('That is incorrect');
@@ -49,6 +51,7 @@ if (typeof (drink) === 'string') {
 switch (drink) {
 case 'yes':
   alert('You\'re absolutely right and I should probably chill out.');
+  correctAnswer++;
 //  console.log('Correct!');
   break;
 case 'no':
@@ -66,6 +69,7 @@ if (typeof (code) === 'string') {
 switch (code) {
 case 'yes':
   alert('Correct again, I am currently in Code 201 and am learning software development.');
+  correctAnswer++;
 //  console.log('Correct!');
     break;
 case 'no':
@@ -81,7 +85,8 @@ if (typeof (security) === 'string') {
 }
 
 if (security === 'yes') {
-  alert('Lastly, correct again. I was and still am in the private security industry.');
+  alert('Once more, you are correct! I was and still am in the private security industry.');
+  correctAnswer++;
 //  console.log('Correct!');
 } else if (security === 'no') {
 //  alert('That is incorrect');
@@ -94,6 +99,7 @@ for (let i = 0; i < 4; i++) {
   let age = 30;
   if (myAge == age) {
     alert('Wow! That was a really good guess! You got it!');
+    correctAnswer++;
     break;
   } else if (i < 3 && myAge < age) {
     alert('That is close, but you need to go a bit higher.');
@@ -109,32 +115,33 @@ for (let i = 0; i < 4; i++) {
 let correct = false;
 let topArtists = [
   'deadmau5',
-  'Memphis May Fire',
-  'Dayseeker',
-  'Ólafur Arnalds',
-  'Wage War',
-  'ERRA',
-  'Dance Gavin Dance',
-  'Kaskade',
-  'Ben Böhmer',
-  'Lane 8'
+  'memphis may fire',
+  'dayseeker',
+  'olafur arnalds',
+  'wage war',
+  'erra',
+  'dance gavin dance',
+  'kaskade',
+  'ben böhmer',
+  'lane 8'
 ];
 
 for (let i = 0; i < 6; i++) {
-  let response = prompt('I\'ll give you 7 guesses to try and name one of my Top Artists in the EDM or Metalcore genre.');
+    let response = prompt('I\'ll give you 7 guesses to try and name one of my Top Artists in the EDM or Metalcore genre.');
   for (let j = 0; j < topArtists.length; j++) {
-    if (response.toLowerCase() == topArtists[j]) {
+      if (response.toLowerCase() == topArtists[j]) {
       alert(response + ' is correct! That was not an easy one to guess!');
       correct = true;
+      correctAnswer++;
       break;
     }
   }  
-  if (correct === false) alert('Sorry, guess again.');
+  if (correct == false) alert('Sorry, guess again.');
   else break;
   
 }
-
-alert('Thank you for answering those questions ' + user + ', you did great! Welcome to my site!')
+alert('My Top 10 Artists in no specific order are ' + topArtists + '.') 
+alert('Thank you for answering those questions ' + user + ', you did great! You got ' + correctAnswer + ' questions right! Welcome to my site!')
 
 
 /*
