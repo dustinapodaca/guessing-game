@@ -111,7 +111,6 @@ for (let i = 0; i < 4; i++) {
 }
 
 // question seven
-
 let correct = false;
 let topArtists = [
   'deadmau5',
@@ -127,9 +126,9 @@ let topArtists = [
 ];
 
 for (let i = 0; i < 6; i++) {
-    let response = prompt('I\'ll give you 7 guesses to try and name one of my Top Artists in the EDM or Metalcore genre.');
+  let response = prompt('I\'ll give you 7 guesses to try and name one of my Top Artists in the EDM or Metalcore genre.');
   for (let j = 0; j < topArtists.length; j++) {
-      if (response.toLowerCase() == topArtists[j]) {
+    if (response.toLowerCase() == topArtists[j]) {
       alert(response + ' is correct! That was not an easy one to guess!');
       correct = true;
       correctAnswer++;
