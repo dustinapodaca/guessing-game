@@ -114,21 +114,21 @@ for (let i = 0; i < 4; i++) {
 let correct = false;
 let topArtists = [
   'deadmau5',
-  'memphis may fire',
-  'dayseeker',
-  'olafur arnalds',
-  'wage war',
-  'erra',
-  'dance gavin dance',
-  'kaskade',
-  'ben böhmer',
-  'lane 8'
+  'Memphis May Fire',
+  'Dayseeker',
+  'Olafur Arnalds',
+  'Wage War',
+  'ERRA',
+  'Dance Gavin Dance',
+  'Kaskade',
+  'Ben Böhmer',
+  'Lane 8'
 ];
 
 for (let i = 0; i < 6; i++) {
   let response = prompt('I\'ll give you 7 guesses to try and name one of my Top Artists in the EDM or Metalcore genre.');
   for (let j = 0; j < topArtists.length; j++) {
-    if (response.toLowerCase() == topArtists[j]) {
+    if (response.toLowerCase() == topArtists[j].toLowerCase()) {
       alert(response + ' is correct! That was not an easy one to guess!');
       correct = true;
       correctAnswer++;
