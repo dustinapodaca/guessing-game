@@ -4,6 +4,8 @@ let correctAnswer = 0;
 
 console.log('app is running');
 
+
+// introduction question
 let user = prompt('Hey there, my name is Dustin- what is your name?');
 console.log(user);
 function one() {
@@ -15,6 +17,101 @@ function one() {
   }
 }
 one();
+
+/*
+function two() {
+  // question one
+  let travel = prompt('I have a few questions for you. Feel free to answer \'Yes\' or \'No\'- but for starters, do I enjoy traveling and being outdoors?');
+  if (typeof (travel) === 'string') {
+    travel = travel.toLowerCase();
+  }
+
+  if (travel === 'yes') {
+    alert('You are correct! I love to travel and explore other parts of the world.');
+    correctAnswer++;
+    console.log('Correct!');
+  } else if (travel === 'no') {
+    alert('That is incorrect');
+  }
+}
+two();
+
+function three() {
+  // question two
+  let gym = prompt('Do I enjoy spending time taking care of myself at the gym?');
+  if (typeof (gym) === 'string') {
+    gym = gym.toLowerCase();
+  }
+
+  if (gym === 'yes') {
+    alert('You are spot on! The gym is usually always my \'me time\' where I can get away.');
+    correctAnswer++;
+    console.log('Correct!');
+  } else if (gym === 'no') {
+    alert('That is incorrect');
+  }
+}
+three();
+
+function four() {
+  // question three
+  let drink = prompt('Do I probably drink way too much caffeine?');
+  if (typeof (drink) === 'string') {
+    drink = drink.toLowerCase();
+  }
+
+  switch (drink) {
+  case 'yes':
+    alert('You\'re absolutely right and I should probably chill out.');
+    correctAnswer++;
+    console.log('Correct!');
+    break;
+  case 'no':
+    alert('You\'re absolutely right, who determines what is too much anyways?');
+    console.log('incorrect!');
+    break;
+  }
+}
+four();
+
+function five() {
+  // question four
+  let code = prompt('Am I currently attending CodeFellows?');
+  if (typeof (code) === 'string') {
+    code = code.toLowerCase();
+  }
+
+  switch (code) {
+  case 'yes':
+    alert('Correct again, I am currently in Code 201 and am learning software development.');
+    correctAnswer++;
+    console.log('Correct!');
+    break;
+  case 'no':
+    alert('That is actually incorrect, I am currently enrolled as a student and am loving it so far!');
+    console.log('incorrect!');
+    break;
+  }
+}
+five();
+
+function six() {
+  // question five
+  let security = prompt('Was I in the security field before starting CodeFellows?');
+  if (typeof (security) === 'string') {
+    security = security.toLowerCase();
+  }
+
+  if (security === 'yes') {
+    alert('Once more, you are correct! I was and still am in the private security industry.');
+    correctAnswer++;
+    console.log('Correct!');
+  } else if (security === 'no') {
+    alert('That is incorrect');
+  }
+}
+six();
+*/
 
 let multipleQuestions = [
   'I have a few questions for you. Please answer with \'Yes\' or \'No\'. For starters, do I enjoy traveling and being outdoors?',
@@ -50,11 +147,16 @@ function allQuestions() {
     }
   }
 }
+
 allQuestions();
 
+
+
 function seven() {
+  // question six
   for (let i = 0; i < 4; i++) {
     let myAge = parseInt(prompt('What age do you think I currently am?'));
+    //console.log(typeof(myAge));
     let age = 30;
     if (myAge === age) {
       alert('Wow! That was a really good guess! You got it!');
@@ -71,6 +173,7 @@ function seven() {
 }
 seven();
 
+// question seven
 let correct = false;
 let topArtists = [
   'deadmau5',

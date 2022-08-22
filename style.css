@@ -1,17 +1,67 @@
-/*
 body {
-    background-color: rgb(119, 228, 135);
+    background-color: rgb(189, 255, 221);
 }
-*/
 
-body {
-    color: white;
-    background-color: black;
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    border-block: thick solid black;
+    text-align: center;
+    color: #336c59;
+    border-color: white;
 }
-/*
-div {
+
+.first {
     margin: 10px;
     padding: 10px;
-    background-color: aquamarine;
+    background-color: #336c59;
+    color: white;
 }
-*/
+
+.first p, ol {
+    font-family: 'Raleway', sans-serif;
+}
+
+.second {
+    margin: 10px;
+    padding: 10px;
+    background-color: #336c59;
+    color: white;
+}
+
+.second p, ul {
+    font-family: 'Raleway', sans-serif;
+}
+
+.third {
+    margin: 10px;
+    padding: 10px;
+    background-color: #336c59;
+    color: white;
+}
+
+.third p, ul {
+    font-family: 'Raleway', sans-serif;
+}
+
+.fourth {
+    margin: 10px;
+    padding: 10px;
+    background-color: #336c59;
+    color: white;
+}
+
+.fourth p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.fifth {
+    margin: 10px;
+    padding: 10px;
+    background-color: #336c59;
+    color: white;
+}
+
+.fifth p, ol {
+    font-family: 'Raleway', sans-serif;
+}
